@@ -1,19 +1,39 @@
-.navbar-brand {
-  padding-left: 35px;
-  font-size: 25px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body {
+    background-color: black !important;
 }
 
-.navbar .nav-item .nav-link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  margin-right: 28px;
+* {
+    color: white;
 }
 
-.navbar .form-inline {
-  margin-right: 125px;
+.hero_section h1 {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.btn-login, .btn-register {
-  margin-right: 15px;
+
+.hero_section span {
+    background-image: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+
+@media only screen and (max-width:990px) {
+
+    .hero_section .hero_text {
+        text-align: center !important;
+        align-items: center !important;
+    }
+    .nav-link {
+        text-align: center;
+        
+    }
+
+    .form-inline {
+        margin-top: 25px;
+        text-align: center;
+    }
+
 }
