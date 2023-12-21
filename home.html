@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" class="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation bar and Main content -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-xl-2 col-lg-2 col-sm-2 bg-body-tertiary sidebar">
+          <div class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+              <!-- Navbar text -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Navbar links -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav flex-column">
+                  <li class="nav-item">
+                    <p class="text-muted nav-title" style="font-size: 13px;">Admin Dashboard</p>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="home.html">
+                      <iconify-icon inline icon="ic:outline-home" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Home</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="orders.html">
+                      <iconify-icon icon="mdi:cart-outline" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Orders</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="products.html">
+                      <iconify-icon icon="ph:package-duotone" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Products</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="users.html">
+                      <iconify-icon icon="mdi:users-outline" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Users</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="catagories.html">
+                      <iconify-icon icon="ic:outline-list" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Catagories</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="coupons.html">
+                      <iconify-icon icon="mdi:tag-outline" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Coupons</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="settings.html">
+                      <iconify-icon icon="material-symbols:settings-outline" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Settings</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Main content -->
+        <main class="col-xl-10 col-md-10 col-sm-10 mx-auto" style="max-width: 2000px;">
+          <div class="container-fluid container-top-bar mt-3 d-flex align-items-center justify-content-between">
+            <h5 class="pt-4 pb-4"> Welcome to our new store </h5>
+            <div>
+              <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              <i class="fa-solid fa-shop fa-xl ms-3"></i>
+            </div>
+          </div>
+          <div class="container-fluid mt-5" style="padding-left: 0px; padding-right: 0px;">
+            <div class="row">
+              <div class="col-xl-3 col-lg-6 col-md-6 col-xs-12">
+                <div class="stat-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-left">
+                      <div class="d-flex align-items-center">
+                        <div class="stat-icon new-members-icon mt-2">
+                          <i class="fa-solid fa-user fa-2xs" style="color: yellow;"></i>
+                        </div>
+                        <div class="ml-3 mt-0">
+                          <div class="d-flex align-items-center">
+                            <div class="stat-number">12</div>
+                            <div class="stat-percentage ml-1 mt-3" style="font-size: 11px; color: yellow;">+3%</div>
+                          </div>
+                          <div class="stat-label mt-0" style="font-size: 12px;">New uUsers</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-xs-12">
+                <div class="stat-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-left">
+                      <div class="d-flex align-items-center">
+                        <div class="stat-icon revenue-icon mt-2">
+                          <i class="fa-solid fa-dollar-sign fa-2xs" style="color: green;"></i>
+                        </div>
+                        <div class="ml-3 mt-0">
+                          <div class="d-flex align-items-center">
+                            <div class="stat-number">$243</div>
+                            <div class="stat-percentage ml-1 mt-3" style="font-size: 11px; color: green;">+10%</div>
+                          </div>
+                          <div class="stat-label mt-0" style="font-size: 12px;">Revenue</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-xs-12">
+                <div class="stat-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-left">
+                      <div class="d-flex align-items-center">
+                        <div class="stat-icon orders-icon mt-2">
+                          <i class="fa-solid fa-cart-shopping fa-2xs" style="color: red;"></i>
+                        </div>
+                        <div class="ml-3 mt-0">
+                          <div class="d-flex align-items-center">
+                            <div class="stat-number">37</div>
+                            <div class="stat-percentage ml-1 mt-3" style="font-size: 11px; color: red;">+10%</div>
+                          </div>
+                          <div class="stat-label mt-0" style="font-size: 12px;">Orders</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-6 col-xs-12">
+                <div class="stat-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-left">
+                      <div class="d-flex align-items-center">
+                        <div class="stat-icon visitors-icon mt-2">
+                          <i class="fa-solid fa-eye fa-2xs" style="color: orange;"></i>
+                        </div>
+                        <div class="ml-3 mt-0">
+                          <div class="d-flex align-items-center">
+                            <div class="stat-number">1,200</div>
+                            <div class="stat-percentage ml-1 mt-3" style="font-size: 11px; color: orange;">+10%</div>
+                          </div>
+                          <div class="stat-label mt-0" style="font-size: 12px;">Visitors</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid mt-4">
+            <div class="row justify-content-between">
+              <div class="col-xl-12 col-md-12 home-top-selling-products admin-chart">
+                <h4 class="m-3">Income</h4>
+                <hr style="height: 1px; background-color: grey !important; border: none;">
+                <div class="admin" style="max-height: 450px; overflow: hidden;">
+                  <div style="height: 100%; aspect-ratio: 2;">
+                    <canvas id="income-chart" style="max-height: 450px;"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </main>
+      </div>
+      <footer class="bg-dark text-light py-3 fixed-bottom footer">
+        <div class="container d-flex justify-content-between">
+          <div class="row">
+            <div class="col-12">
+              <p>COPYRIGHT ©2023 - Business. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    </main>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      function getFormattedDate(dateString) {
+        let d = dateString.split("/");
+        let dat = new Date(d[2] + '/' + d[0] + '/' + d[1]);
+        return `${dat.toLocaleString('default', { month: 'short' })} ${dat.getDate()}`;
+      }
+
+      let time = [
+        getFormattedDate("12/11/2023"),
+        getFormattedDate("12/10/2023"),
+        getFormattedDate("12/9/2023"),
+        getFormattedDate("12/8/2023"),
+        getFormattedDate("12/7/2023"),
+        getFormattedDate("12/6/2023"),
+        getFormattedDate("12/5/2023"),
+        getFormattedDate("12/4/2023"),
+        getFormattedDate("12/3/2023"),
+        getFormattedDate("12/2/2023"),
+        getFormattedDate("12/1/2023"),
+        getFormattedDate("11/31/2023"),
+      ];
+
+      let incomeData = [42, 46, 52, 32, 62, 48, 57, 52, 49, 65, 44, 41];
+
+      let ordersData = [11, 12, 15, 10, 18, 12, 15];
+
+      new Chart(document.getElementById('income-chart'), {
+        type: 'line',
+        data: {
+          labels: time.reverse(),
+          datasets: [{
+            label: 'Income (USD)',
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            borderColor: 'rgba(255, 0, 255, 1)',
+            data: incomeData,
+            lineTension: 0.3,
+            fill: true,
+          }],
+        },
+        options: {
+          scales: {
+            y: {
+              min: 0,
+              ticks: {
+                callback: function (value) {
+                  return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+                }
+              }
+            }
+          },
+          responsive: true,
+          maintainAspectRatio: true
+        }
+      });
+    </script>
+  </body>
+</html>

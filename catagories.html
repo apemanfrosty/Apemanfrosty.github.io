@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catagories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" class="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation bar and Main content -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-xl-2 col-lg-2 col-sm-2 bg-body-tertiary sidebar">
+          <div class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+              <!-- Navbar text -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Navbar links -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav flex-column">
+                  <li class="nav-item">
+                    <p class="text-muted nav-title" style="font-size: 13px;">Admin Dashboard</p>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="home.html">
+                      <iconify-icon inline icon="ic:outline-home" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Home</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="orders.html">
+                      <iconify-icon icon="mdi:cart-outline" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Orders</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="products.html">
+                      <iconify-icon icon="ph:package-duotone" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Products</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="users.html">
+                      <iconify-icon icon="mdi:users-outline" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Users</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="catagories.html">
+                      <iconify-icon icon="ic:outline-list" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Catagories</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="coupons.html">
+                      <iconify-icon icon="mdi:tag-outline" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Coupons</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-muted" href="settings.html">
+                      <iconify-icon icon="material-symbols:settings-outline" width="34" height="24" style="vertical-align: middle; margin-right: -2px;"></iconify-icon>
+                      <span style="vertical-align: middle;">Settings</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Main content -->
+        <main class="col-xl-10 col-md-10 col-sm-10 mx-auto" style="max-width: 2000px;">
+          <div class="container-fluid container-top-bar mt-3 d-flex align-items-center justify-content-between">
+            <h5 class="pt-4 pb-4"> Welcome to our new store </h5>
+            <div>
+              <i class="fa-solid fa-cart-shopping fa-xl"></i>
+              <i class="fa-solid fa-shop fa-xl ms-3"></i>
+            </div>
+          </div>
+          <div class="container-fluid mt-5" style="background-color: #fff; border: 1px solid grey;">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2 class="m-2 mt-4">Manage Catagories</h2>
+              </div>
+            </div>
+            <div class="row justify-content-between">
+              <div class="col-lg-11">
+                <div class="input-group mt-4 mb-4 m-0">
+                  <input type="text" class="form-control" placeholder="Search by catagory ID or name." aria-label="Search" aria-describedby="basic-addon2" style="border: 1px solid grey;">
+                  <button class="btn btn-outline-light" type="button" id="basic-addon2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-1 mt-4">
+                <a href="#">
+                  <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-circle-plus fa-lg" style="padding-left: 18px; padding-right: 18px;"></i></button>
+                </a>
+              </div>
+            </div>
+            <div class="row justify-content-between" style="padding-left: 0px; padding-right: 0px;">
+              <div class="col-lg-12">
+                <div class="table-responsive">
+                  <table class="table table-borderless table-catagories">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">NAME</th>
+                        <th scope="col">CREATED</th>
+                        <th scope="col">ACTIONS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>53025-002953295-039253025</td>
+                        <td>Telegram Bots</td>
+                        <td>8/12/2023</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-warning">Edit</button>
+                          <button type="button" class="btn btn-outline-danger">Delete</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>53025-002953295-039253025</td>
+                        <td>Telegram Bots</td>
+                        <td>8/12/2023</td>
+                        <td>
+                          <button type="button" class="btn btn-outline-warning">Edit</button>
+                          <button type="button" class="btn btn-outline-danger">Delete</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="bg-dark text-light py-3 fixed-bottom footer">
+        <div class="container d-flex justify-content-between">
+          <div class="row">
+            <div class="col-12">
+              <p>COPYRIGHT ©2023 - Business. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
